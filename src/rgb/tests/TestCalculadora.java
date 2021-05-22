@@ -17,12 +17,68 @@ class TestCalculadora
 		calculadora = new Calculadora();
 		
 		//a
-		int resultado =  calculadora.suma(5, 6);
-		
-		
+		int resultado =  calculadora.sumar(5, 6);
+				
 		//a
 		assertEquals(11,resultado);
 		
 	}
+	
+	@Test
+	void PruebaResta() 
+	{
+		//a
+		calculadora = new Calculadora();
+		
+		//a
+		int resultado =  calculadora.restar(5, 6);
+				
+		//a
+		assertEquals(-1,resultado);
+		
+	}
+	
+	@Test
+	void PruebaMultiplicacion() 
+	{
+		//a
+		calculadora = new Calculadora();
+		
+		//a
+		int resultado =  calculadora.multiplicar(5, 6);
+				
+		//a
+		assertEquals(30,resultado);
+		
+	}
+	
+	@Test
+	void PruebaDivision() 
+	{
+		//a
+		calculadora = new Calculadora();
+		
+		//a
+		int resultado =  calculadora.dividir(60, 6);
+				
+		//a
+		assertEquals(10,resultado);
+		
+	}
+	
+	@Test
+	void PruebaRaiz() 
+	{
+		//a
+		calculadora = new Calculadora();
+		
+		//a
+		int resultado =  calculadora.raizcuadrada(25);
+				
+		//a
+		assertEquals(5,resultado);
+		
+	}
+	
 
 }

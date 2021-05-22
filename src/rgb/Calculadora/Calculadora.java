@@ -2,7 +2,7 @@ package rgb.Calculadora;
 
 public class Calculadora 
 {
-	public int suma (int a , int b)
+	public int sumar (int a , int b)
 	{
 		return a + b;
 	}
