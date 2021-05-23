@@ -115,7 +115,7 @@ class TestCalculadora
 		calculadora = new Calculadora();
 		
 		//a
-		int resultado =  calculadora.raizcuadrada(25);
+		int resultado =  calculadora.raizCuadrada(25);
 				
 		//a
 		assertEquals(5,resultado);
