@@ -2,39 +2,40 @@ package rgb.Calculadora;
 
 public class Calculadora 
 {
-	public int sumar (int a , int b)
+	public double sumar (double a , double b)
 	{
 		return a + b;
 	}
 	
-	public int restar (int a , int b)
+	public double restar (double a , double b)
 	{
 		return a - b;
 	}
 	
-	public int multiplicar (int a , int b)
+	public double multiplicar (double a , double b)
 	{
 		return a * b;
 	}
 	
-	public double dividir (int a , int b)
+	public double dividir (double a , double aux)
 	{
-		return a / b;
+		return a / aux;
 	}
 	
-	public double raizCuadrada (int a )
+	public double raizCuadrada (double a )
 	{
-		double aux = Double.NaN;
+		double aux;
 
-		double resultado = a / 2;
+		double resultado = dividir(a,2); //a / 2;
 		
 		if (resultado > 0)
 		{
-
 			do {
 				aux = resultado;
-				resultado = (aux + (a / aux)) / 2;
-			} while ((aux - resultado) != 0);
+				//resultado = (aux + (a / aux)) / 2;
+				resultado = dividir(sumar(aux,dividir(a,aux)),2);
+			//} while ((aux - resultado) != 0);
+			} while (restar(aux, resultado) != 0);
 	
 			return resultado;
 		}

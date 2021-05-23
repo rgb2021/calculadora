@@ -41,9 +41,9 @@ public class interfaceCalculadora {
 	{
 		Calculadora calculadora = new Calculadora();
 		String respuesta = "S";
-		int val1;
-		int val2;
-		int resultadoInt = 0;
+		double val1;
+		double val2;
+		double resultadoInt = 0;
 		double resultatoDouble = 0;
 		BufferedReader lector = new BufferedReader(new InputStreamReader(System.in));
 		
