@@ -101,10 +101,10 @@ class TestCalculadora
 		calculadora = new Calculadora();
 		
 		//a
-		int resultado =  calculadora.dividir(60, 0);
+		Exception exception = assertThrows(ArithmeticException.class, () -> calculadora.dividir(60, 0));
 				
-		//a
-		assertEquals(10,resultado);
+		//a		
+		assertEquals("/ by zero", exception.getMessage());
 		
 	}
 	
