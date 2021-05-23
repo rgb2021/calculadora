@@ -31,6 +31,20 @@ class TestCalculadora
 		calculadora = new Calculadora();
 		
 		//a
+		int resultado =  calculadora.restar(20, 5);
+				
+		//a
+		assertEquals(15,resultado);
+		
+	}
+	
+	@Test
+	void PruebaRestaNegativa() 
+	{
+		//a
+		calculadora = new Calculadora();
+		
+		//a
 		int resultado =  calculadora.restar(5, 6);
 				
 		//a
@@ -53,6 +67,20 @@ class TestCalculadora
 	}
 	
 	@Test
+	void PruebaMultiplicacionPorCero() 
+	{
+		//a
+		calculadora = new Calculadora();
+		
+		//a
+		int resultado =  calculadora.multiplicar(5, 6);
+				
+		//a
+		assertEquals(30,resultado);
+		
+	}
+	
+	@Test
 	void PruebaDivision() 
 	{
 		//a
@@ -60,6 +88,20 @@ class TestCalculadora
 		
 		//a
 		int resultado =  calculadora.dividir(60, 6);
+				
+		//a
+		assertEquals(10,resultado);
+		
+	}
+	
+	@Test
+	void PruebaDivisionPorCero() 
+	{
+		//a
+		calculadora = new Calculadora();
+		
+		//a
+		int resultado =  calculadora.dividir(60, 0);
 				
 		//a
 		assertEquals(10,resultado);
