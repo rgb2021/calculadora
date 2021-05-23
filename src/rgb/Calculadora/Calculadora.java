@@ -17,14 +17,14 @@ public class Calculadora
 		return a * b;
 	}
 	
-	public int dividir (int a , int b)
+	public double dividir (int a , int b)
 	{
 		return a / b;
 	}
 	
-	public int raizCuadrada (int a )
+	public double raizCuadrada (int a )
 	{
-		return (int) Math.sqrt(a);
+		return  Math.sqrt(a);
 	}
 	
 

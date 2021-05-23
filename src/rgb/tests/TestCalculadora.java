@@ -87,7 +87,7 @@ class TestCalculadora
 		calculadora = new Calculadora();
 		
 		//a
-		int resultado =  calculadora.dividir(60, 6);
+		double  resultado =  calculadora.dividir(60, 6);
 				
 		//a
 		assertEquals(10,resultado);
@@ -115,12 +115,25 @@ class TestCalculadora
 		calculadora = new Calculadora();
 		
 		//a
-		int resultado =  calculadora.raizCuadrada(25);
+		double  resultado =  calculadora.raizCuadrada(25);
 				
 		//a
 		assertEquals(5,resultado);
 		
 	}
 	
+	@Test
+	void PruebaRaizNegativa() 
+	{
+		//a
+		calculadora = new Calculadora();
+		
+		//a
+		double   resultado =  calculadora.raizCuadrada(-3);
+				
+		//a
+		assertEquals(Double.NaN,resultado);
+		
+	}
 
 }
