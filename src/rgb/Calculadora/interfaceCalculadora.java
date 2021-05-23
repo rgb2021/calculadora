@@ -3,18 +3,17 @@ package rgb.Calculadora;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 
 public class interfaceCalculadora {
 
 	public static void printMenu ()
 	{
-		System.out.println("¿Que operación quiere hacer?");
+		System.out.println("¿Qué operación quiere hacer?");
 		System.out.println("1. Suma");
 		System.out.println("2. Resta");
 		System.out.println("3. Multiplicación");
 		System.out.println("4. División");
-		System.out.println("5. Raiz Cuadrada");
+		System.out.println("5. Raíz Cuadrada");
 		System.out.println("Introduzca opción: ");
 	}
 	
