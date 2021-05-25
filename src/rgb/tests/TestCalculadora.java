@@ -136,8 +136,7 @@ class TestCalculadora
 		double  resultado =  calculadora.raizCuadrada(13);
 				
 		//a
-		DecimalFormat df = new DecimalFormat("###.#######");
-		
+		DecimalFormat df = new DecimalFormat("###.#######");		
 		assertEquals(df.format(3.605551275463989),df.format(resultado));
 		
 	}

@@ -32,9 +32,7 @@ public class Calculadora
 		{
 			do {
 				aux = resultado;
-				//resultado = (aux + (a / aux)) / 2;
 				resultado = dividir(sumar(aux,dividir(a,aux)),2);
-			//} while ((aux - resultado) != 0);
 			} while (restar(aux, resultado) != 0);
 	
 			return resultado;
